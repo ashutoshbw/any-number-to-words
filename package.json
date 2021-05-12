@@ -4,7 +4,7 @@
   "description": "A string based number to word converter that can convert pretty large numbers to words in several locales. String is it's limit.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\""
   },
   "keywords": [
     "number to words",
