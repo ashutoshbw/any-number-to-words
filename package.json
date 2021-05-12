@@ -20,6 +20,10 @@
     "bangla",
     "hindi"
   ],
-  "author": "Ashutosh Biswas",
-  "license": "MIT"
+  "author": "Ashutosh Biswas (https://ashutoshbiswas.netlify.app/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashutoshbw314/any-number-to-words/issues"
+  },
+  "homepage": "https://github.com/ashutoshbw314/any-number-to-words/tree/main#readme"
 }
