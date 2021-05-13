@@ -2,9 +2,13 @@
   "name": "any-number-to-words",
   "version": "1.0.0",
   "description": "A string based number to word converter that can convert pretty large numbers to words in several locales. String is it's limit.",
-  "main": "index.js",
+  "main": "cjs/index.js",
+  "module": "src/index.js",
   "scripts": {
-    "test": "echo \"No test specified\""
+    "test": "echo \"No test specified\"",
+    "clean": "shx rm -rf cjs",
+    "build": "npm run clean && babel src -d cjs",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "number to words",
@@ -25,5 +29,11 @@
   "bugs": {
     "url": "https://github.com/ashutoshbw314/any-number-to-words/issues"
   },
-  "homepage": "https://github.com/ashutoshbw314/any-number-to-words/tree/main#readme"
+  "homepage": "https://github.com/ashutoshbw314/any-number-to-words/tree/main#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "shx": "^0.3.3"
+  }
 }

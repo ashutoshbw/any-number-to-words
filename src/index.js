@@ -1,13 +1,13 @@
-const Engine = require("./src/engine");
-const {parseNumberString} = require("./src/utils");
+import Engine from "./engine.js";
+import {parseNumberString} from "./utils.js";
+import defaultLocale from "./locales/en-us.js";
+export {default as enUS} from "./locales/en-us.js";
+export {default as bnBD} from "./locales/bn-bd.js";
+export {default as hiIN} from "./locales/hi-in.js";
 
-class Converter {
-  constructor(locale = "en-us") {
-    try {
-      this.locale = require(`./src/locales/${locale}`);
-    } catch(error) {
-      throw new Error("locale not found");
-    }
+export class Converter {
+  constructor(locale = defaultLocale) {
+    this.locale = locale;
   }
 
   toWords(number, settings = {}) {
@@ -26,5 +26,3 @@ class Converter {
     return result;
   }
 } 
-
-module.exports = Converter;

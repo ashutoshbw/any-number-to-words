@@ -1,4 +1,4 @@
-function parseNumberString(str) {
+export function parseNumberString(str) {
   const numberPattern = /^(?<sign>[+\-])?(?<number>\d+(\.\d*)?|\.\d+)([eE](?<exponent>[+\-]?\d+))?$/;
   const match = str.match(numberPattern);
   if (match == null) throw new Error("Invalid number");
@@ -35,4 +35,3 @@ function parseNumberString(str) {
   return result;
 }
 
-exports.parseNumberString = parseNumberString;

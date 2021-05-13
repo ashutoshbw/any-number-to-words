@@ -1,4 +1,4 @@
-class Engine {
+export default class {
   constructor(settings) {
     this.settings = settings;
   }
@@ -67,5 +67,3 @@ class Engine {
     return readRanges(parseNum(numStr));
   }
 }
-
-module.exports = Engine;
