@@ -78,6 +78,9 @@ MIT
 * The regular expression for parsing number is inspired from [Eloquent JavaScript](https://eloquentjavascript.net/code/#9.3) book.
 
 ## Change Log
+#### Version 2.0.4
+* Fixed the bug of not translating minus sign for non en-us locales. 
+
 #### Version 2.0.3
 * Updated documentation. 
 

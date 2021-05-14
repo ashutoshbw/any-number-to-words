@@ -21,7 +21,7 @@ export class Converter {
     }
 
     if (numberParsed.sign == '-') {
-      result = this.locale.names.minus + " " + result;
+      result = mergedLocale.names.minus + " " + result;
     }
 
     return result;
