@@ -1,5 +1,5 @@
 # Any number to words
-Converts any(string is it's limit) decimal number to words in several locales.
+A string based number to words converter. 
 
 See **[Live Demo](https://any-number-to-words.netlify.app/)**
 
@@ -78,9 +78,13 @@ MIT
 * The regular expression for parsing number is inspired from [Eloquent JavaScript](https://eloquentjavascript.net/code/#9.3) book.
 
 ## Change Log
+#### Version 2.0.2
+* Fixed the bug of not translating decimal point for non en-us locales.
+
+
 #### Version 2.0.1
 * Added documentation.
-* Fixed the bug of not translating fractional part of non en-us locales.
+* Fixed the bug of not translating fractional part for non en-us locales.
 
 #### Version 2.0.0
 * Made the package hybrid to support both ES6 modules syntax and CommonJS syntax.

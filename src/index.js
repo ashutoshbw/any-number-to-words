@@ -13,10 +13,11 @@ export class Converter {
   toWords(number, settings = {}) {
     const numberParsed = parseNumberString(`${number}`);
     const engine = new Engine(this.locale);
-    let result = engine.toWords(numberParsed.whole, {...this.locale, ...settings});
+    const mergedLocale = {...this.locale, ...settings};
+    let result = engine.toWords(numberParsed.whole, mergedLocale);
 
     if (numberParsed.fraction != "0") {
-      result += ` ${this.locale.names.point} ` + [...numberParsed.fraction].map(digit => engine.toWords(digit, {...this.locale, ...settings})).join(" ");
+      result += ` ${mergedLocale.names.point} ` + [...numberParsed.fraction].map(digit => engine.toWords(digit, mergedLocale)).join(" ");
     }
 
     if (numberParsed.sign == '-') {
