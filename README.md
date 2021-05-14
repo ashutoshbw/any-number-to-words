@@ -1,7 +1,7 @@
 # Any number to words
 Converts any(string is it's limit) decimal number to words in several locales.
 
-<span style='font-size: 25px; font-weight: bold;'>See **[Live Demo](https://any-number-to-words.netlify.app/)**</span>
+See **[Live Demo](https://any-number-to-words.netlify.app/)**
 
 ## Installation
 ```
@@ -88,5 +88,5 @@ MIT
 * Added locales: `bnBD` and `hiIN`.
 
 #### Version 1.0.0
-Initial release.
+* Initial release.
 
