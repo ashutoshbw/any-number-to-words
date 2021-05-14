@@ -1,5 +1,5 @@
 # Any number to words
-A string based number to words converter. 
+A string based number to words converter. It can convert very small or large numbers(just for fun).
 
 See **[Live Demo](https://any-number-to-words.netlify.app/)**
 
@@ -80,7 +80,6 @@ MIT
 ## Change Log
 #### Version 2.0.2
 * Fixed the bug of not translating decimal point for non en-us locales.
-
 
 #### Version 2.0.1
 * Added documentation.
