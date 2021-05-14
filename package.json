@@ -1,6 +1,6 @@
 {
   "name": "any-number-to-words",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A string based number to word converter that can convert pretty large numbers to words in several locales. String is it's limit.",
   "main": "cjs/index.js",
   "module": "src/index.js",
