@@ -10,13 +10,13 @@ npm i any-number-to-words
 
 ## API
 ### Initialization
-For ES6 module:
+ES6 module format:
 ```javascript
 import {Converter} from "any-number-to-words";
 const converter = new Converter();
 ```
 
-CommonJS:
+CommonJS module format:
 ```javascript
 const {Converter} = require("any-number-to-words");
 const converter = new Converter();
