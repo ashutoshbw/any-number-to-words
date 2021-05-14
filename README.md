@@ -1,5 +1,5 @@
 # Any number to words
-A string based number to words converter. It can convert very small or large numbers(just for fun).
+A string based number to words converter. It can convert from very small to large decimal numbers(just for fun 🌈).
 
 See **[Live Demo](https://any-number-to-words.netlify.app/)**
 
@@ -78,6 +78,9 @@ MIT
 * The regular expression for parsing number is inspired from [Eloquent JavaScript](https://eloquentjavascript.net/code/#9.3) book.
 
 ## Change Log
+#### Version 2.0.3
+* Updated documentation. 
+
 #### Version 2.0.2
 * Fixed the bug of not translating decimal point for non en-us locales.
 
