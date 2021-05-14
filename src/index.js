@@ -16,7 +16,7 @@ export class Converter {
     let result = engine.toWords(numberParsed.whole, {...this.locale, ...settings});
 
     if (numberParsed.fraction != "0") {
-      result += ` ${this.locale.names.point} ` + [...numberParsed.fraction].map(digit => engine.toWords(digit, this.locale)).join(" ");
+      result += ` ${this.locale.names.point} ` + [...numberParsed.fraction].map(digit => engine.toWords(digit, {...this.locale, ...settings})).join(" ");
     }
 
     if (numberParsed.sign == '-') {

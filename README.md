@@ -1,6 +1,8 @@
 # Any number to words
 Converts any(string is it's limit) decimal number to words in several locales.
 
+<span style='font-size: 25px; font-weight: bold;'>See **[Live Demo](https://any-number-to-words.netlify.app/)**</span>
+
 ## Installation
 ```
 npm i any-number-to-words
@@ -20,7 +22,7 @@ const {Converter} = require("any-number-to-words");
 const converter = new Converter();
 ```
 
-The default locale is English(`enUS`). To convert in to other locale(eg. `bnBD`) you also need to import or require the locales:
+The default locale is `enUS`(English). To convert in to other locales(eg. `bnBD`) you also need to import or require the locales:
 ```javascript
 // bnBD is for Bengali
 import {Converter, bnBD} from "any-number-to-words";
@@ -45,7 +47,8 @@ converter.toWords(number|string, [options]);
 
 Examples:
 ```javascript
-// assuming the locale is enUS
+// --- assuming the locale is enUS ---
+
 converter.toWords(1729);                // → one thousand seven hundred twenty-nine 
 
 // turn on commas
@@ -77,6 +80,7 @@ MIT
 ## Change Log
 #### Version 2.0.1
 * Added documentation.
+* Fixed the bug of not translating fractional part of non en-us locales.
 
 #### Version 2.0.0
 * Made the package hybrid to support both ES6 modules syntax and CommonJS syntax.

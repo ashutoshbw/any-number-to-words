@@ -29,7 +29,8 @@
   "bugs": {
     "url": "https://github.com/ashutoshbw314/any-number-to-words/issues"
   },
-  "homepage": "https://github.com/ashutoshbw314/any-number-to-words/tree/main#readme",
+  "homepage": "https://any-number-to-words.netlify.app/",
+  "repository": "github:ashutoshbw314/any-number-to-words",
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/plugin-transform-modules-commonjs": "^7.14.0",
